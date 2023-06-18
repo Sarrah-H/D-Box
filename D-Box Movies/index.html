@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- side Nav-bar -->
+
+    <div class="side_nav   ">
+        <div class="inner_nav " id="Wid">
+            <ul class="nav_list">
+                <li>
+                    <a id="now_playing" href="#" onclick="Nowplaying()"> Now Playing </a>
+                </li>
+                <li>
+                    <a id="popular" href="#" onclick="popularMovies()"> Popular </a>
+                </li>
+                <li>
+                    <a id="top_rated" href="#" onclick="TopRatedMovies()"> Top Rated</a>
+                </li>
+                <li>
+                    <a id="Trending" href="#" onclick="TrendingMovies()"> Trending</a>
+                </li>
+                <li>
+                    <a id="Upcoming" href="#" onclick=" UpComingMovies()"> Upcoming </a>
+                </li>
+                <li>
+                    <a id="Contactus" href="#Contact"> Contact Us</a>
+                </li>
+            </ul>
+            <div class="navfooter">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+
+                </div>
+                <div class="footer_content ">
+                    Copyright Â© 2019 All Rights
+                    Reserved.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="outer_nav">
+            <div class="logo">
+
+                <img src="logo (1).png" alt="Yummy">
+            </div>
+            <div class="menu_btn">
+                <i id="OpenClose" class="fa-solid fa-bars" onclick="openAndClose()"></i>
+            </div>
+            <div class="outer_icons">
+                <i class="fa-solid fa-share-nodes"></i>
+                <i class="fa-solid fa-globe"></i>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Search bar -->
+
+    <div class="container py-5  ">
+        <div class="search_inputs d-flex my-2 " id="inputs">
+
+            <input class=" form-control Lett " type="text" placeholder=" Search by word" oninput=" SearchMovie() ">
+            <input class=" form-control Nam " type="text" placeholder="Search">
+        </div>
+    </div>
+
+
+    <!-- page-data -->
+
+    <div class="container">
+        <div class="row g-5  " id="homeitems">
+
+        </div>
+    </div>
+
+    <!-- contact us -->
+
+
+    <div class="container my-4 " id="Contact">
+        <div class="row justify-content-center">
+            <div class="col-md-7 contact_inputs">
+                <h2 class="my-4 text-white"> Contact Us</h2>
+                <input class="form-control  mb-4  " id="EmailIn" type="email" placeholder="Enter Your Email" required>
+                <p id="mailVal" class="hide-error-msg">Enter a valid mail </p>
+                <input class="form-control mb-4 " id="NameIn" type="text" placeholder="Enter Your Name" required>
+                <textarea class="w-100 form-control" placeholder="Enter Your Meassage here.. " name="Meassage" id=""
+                    rows="10"></textarea>
+                <div class="subm text-center">
+                    <button class="btn btn-outline-danger mt-4 " id="butt" type="submit" disabled>Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
